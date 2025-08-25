@@ -359,8 +359,8 @@
                     </main>
                 </div>
 
-                <div class="mt-6">
-                    {{ $menus->links() }}
+                <div class="mt-3">
+                    {{ $menus->links('pagination::tailwind') }}
                 </div>
             </div>
 
