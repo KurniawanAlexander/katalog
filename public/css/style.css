@@ -1,0 +1,81 @@
+/* style.css */
+
+/* Mengatur layout utama dengan Flexbox untuk sticky footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+/* Memastikan konten utama mengambil semua ruang yang tersisa */
+main {
+    flex-grow: 1;
+}
+
+/* =========================================================
+   Kode-kode sebelumnya berada di bawah ini
+   ========================================================= */
+
+/* Ini adalah contoh kelas kustom yang dibuat dengan Tailwind
+   untuk membuat tombol yang konsisten. */
+.custom-btn {
+    background-color: #994d51;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.custom-btn:hover {
+    background-color: #854448;
+}
+
+/* Mengatur section agar hanya satu yang terlihat */
+.content-section {
+    display: none;
+}
+
+.active-section {
+    display: block;
+}
+
+/* Mengatur tampilan link navigasi yang aktif */
+.nav-link.active {
+    color: #994d51;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Jika Anda ingin membuat kelas CSS kustom lain yang tidak ada di Tailwind,
+   Anda bisa menuliskannya di sini. */
+.custom-animation {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Styling untuk Tab yang Aktif */
+.tab-active {
+    color: #994d51;
+    /* Warna teks tab aktif */
+    border-color: #994d51;
+    /* Warna garis bawah tab aktif */
+    font-weight: 600;
+    /* Tebal teks tab aktif */
+}
