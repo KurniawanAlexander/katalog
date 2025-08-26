@@ -79,3 +79,7 @@ main {
     font-weight: 600;
     /* Tebal teks tab aktif */
 }
+
+.responsive-table {
+  overflow-x: auto;
+}
